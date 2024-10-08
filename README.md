@@ -178,3 +178,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Detailed steps for connecting to PostgreSQL, both with and without Docker.
 - Instructions for creating a simple DAG.
 - Clear organization of the setup process and usage.
+
+
+Screenshots
+![alt text](image.png)
+
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
