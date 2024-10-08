@@ -180,11 +180,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Clear organization of the setup process and usage.
 
 
-Screenshots
-![alt text](image.png)
+## Screenshots
 
+### Screenshot 1
+![Airflow Dashboard](images/image.png)
 
-![alt text](image-1.png)
+### Screenshot 2
+![PostgreSQL Schema](images/image-1.png)
 
-![alt text](image-2.png)
+### Screenshot 3
+![Data Pipeline](images/image-2.png)
+
 
