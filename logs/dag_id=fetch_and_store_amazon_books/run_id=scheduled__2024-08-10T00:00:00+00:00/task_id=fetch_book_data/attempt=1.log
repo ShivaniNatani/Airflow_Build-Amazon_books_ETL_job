@@ -1,0 +1,12 @@
+[2024-10-08T05:24:54.719+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T05:24:54.811+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-08-10T00:00:00+00:00 [queued]>
+[2024-10-08T05:24:54.857+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-08-10T00:00:00+00:00 [queued]>
+[2024-10-08T05:24:54.860+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 2
+[2024-10-08T05:24:54.963+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): fetch_book_data> on 2024-08-10 00:00:00+00:00
+[2024-10-08T05:24:55.018+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_and_store_amazon_books', 'fetch_book_data', 'scheduled__2024-08-10T00:00:00+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/app.py', '--cfg-path', '/tmp/tmp38onaq2y']
+[2024-10-08T05:24:55.027+0000] {standard_task_runner.py:105} INFO - Job 101: Subtask fetch_book_data
+[2024-10-08T05:24:55.016+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=179) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-08T05:24:55.032+0000] {standard_task_runner.py:72} INFO - Started process 183 to run task
+[2024-10-08T05:24:56.132+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-08-10T00:00:00+00:00 [running]> on host 947926f81760

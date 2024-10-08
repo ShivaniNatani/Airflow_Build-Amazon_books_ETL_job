@@ -1,0 +1,4 @@
+[2024-10-08T05:15:32.051+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T05:15:32.547+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-06-21T00:00:00+00:00 [queued]>
+[2024-10-08T05:15:32.629+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-06-21T00:00:00+00:00 [queued]>
+[2024-10-08T05:15:32.641+0000] {taskinstance.py:2856} INFO - Starting attempt 2 of 2

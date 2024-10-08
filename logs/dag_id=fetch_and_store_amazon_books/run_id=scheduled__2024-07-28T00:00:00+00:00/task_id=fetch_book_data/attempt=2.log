@@ -1,0 +1,24 @@
+[2024-10-08T05:24:23.076+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-08T05:24:23.240+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-07-28T00:00:00+00:00 [queued]>
+[2024-10-08T05:24:23.369+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-07-28T00:00:00+00:00 [queued]>
+[2024-10-08T05:24:23.390+0000] {taskinstance.py:2856} INFO - Starting attempt 2 of 2
+[2024-10-08T05:24:23.587+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): fetch_book_data> on 2024-07-28 00:00:00+00:00
+[2024-10-08T05:24:23.634+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=147) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-08T05:24:23.644+0000] {standard_task_runner.py:72} INFO - Started process 161 to run task
+[2024-10-08T05:24:23.645+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_and_store_amazon_books', 'fetch_book_data', 'scheduled__2024-07-28T00:00:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/app.py', '--cfg-path', '/tmp/tmppv8pd3ma']
+[2024-10-08T05:24:23.651+0000] {standard_task_runner.py:105} INFO - Job 95: Subtask fetch_book_data
+[2024-10-08T05:24:24.218+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_and_store_amazon_books.fetch_book_data scheduled__2024-07-28T00:00:00+00:00 [running]> on host 947926f81760
+[2024-10-08T05:24:25.997+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_and_store_amazon_books' AIRFLOW_CTX_TASK_ID='fetch_book_data' AIRFLOW_CTX_EXECUTION_DATE='2024-07-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-28T00:00:00+00:00'
+[2024-10-08T05:24:26.037+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-08T05:24:26.039+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-08T05:24:26.041+0000] {logging_mixin.py:190} INFO - Current task name:fetch_book_data state:running start_date:2024-10-08 05:24:23.248378+00:00
+[2024-10-08T05:24:26.042+0000] {logging_mixin.py:190} INFO - Dag name:fetch_and_store_amazon_books and current dag run status:running
+[2024-10-08T05:24:26.046+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-08T05:24:31.057+0000] {local_task_job_runner.py:261} INFO - Task exited with return code -9For more information, see https://***.apache.org/docs/apache-***/stable/troubleshooting.html#LocalTaskJob-killed
+[2024-10-08T05:24:31.378+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1378: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-10-08T05:24:31.440+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-08T05:24:31.446+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
