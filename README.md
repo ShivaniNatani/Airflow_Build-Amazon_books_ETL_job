@@ -150,6 +150,8 @@ This project aims to extract data engineering books from Amazon, transform the d
      - **Login**: `your_postgres_user`
      - **Password**: `your_postgres_password`
      - **Port**: `5432`
+    
+
 
 ## Hosting Airflow and PostgreSQL Locally
 - If you're using Docker, both Airflow and PostgreSQL will be hosted in containers, and you can access them through `http://localhost:8080` for Airflow and the configured PostgreSQL connection.
@@ -167,6 +169,17 @@ This project aims to extract data engineering books from Amazon, transform the d
 - The data is stored in the PostgreSQL database `airflow_db`.
 - You can define the schema for storing the book data as per your requirements.
 
+## Screenshots
+
+## Airflow Dashboard
+![Airflow Dashboard](https://github.com/ShivaniNatani/Airflow_Build-Amazon_books_ETL_job/blob/main/image-1.png)
+
+### PostgreSQL Schema
+![PostgreSQL Schema](https://github.com/ShivaniNatani/Airflow_Build-Amazon_books_ETL_job/blob/main/image-2.png)
+
+### Data Pipeline
+![Data Pipeline](https://github.com/ShivaniNatani/Airflow_Build-Amazon_books_ETL_job/blob/main/image.png)
+
 ## Contributing
 If you wish to contribute to this project, please fork the repository and create a pull request.
 
@@ -180,15 +193,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Clear organization of the setup process and usage.
 
 
-## Screenshots
 
-### Screenshot 1
-![Airflow Dashboard](images/image.png)
-
-### Screenshot 2
-![PostgreSQL Schema](images/image-1.png)
-
-### Screenshot 3
-![Data Pipeline](images/image-2.png)
 
 
